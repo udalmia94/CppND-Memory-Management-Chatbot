@@ -44,16 +44,8 @@ public:
     // proprietary functions
     void AddToken(std::string token); // add answers to list
     void AddEdgeToParentNode(GraphEdge *edge);
-    void AddEdgeToChildNode(std::unique_ptr<GraphEdge> &edge);
-
-    //// STUDENT CODE
-    ////
-
+    void AddEdgeToChildNode(std::unique_ptr<GraphEdge> edge);
     void MoveChatbotHere(ChatBot chatbot);
-
-    ////
-    //// EOF STUDENT CODE
-
     void MoveChatbotToNewNode(GraphNode *newNode);
 };
 
